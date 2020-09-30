@@ -1,0 +1,24 @@
+<!DOCTYPE html>>
+<html>
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Javascript get element by tagname() demo</h1>
+    <h2>first heading</h2>
+    <p>This is first paragraph</p>
+    <h2>second heading</h2>
+    <p>This is second paragraph</p>
+    <h2>third heading</h2>
+    <p>This is third paragraph</p>
+
+    <button id="btnCount">Count H2</button>
+    <script>
+        let btn = document.getElementById('btnCount');
+        btn.addEventListener('click', () => {
+            let headings = document.getElementsByTagName('h2');
+            alert(`The number of h2 tags: ${headings.length}`)
+        })
+    </script>
+</body>
+</html>
